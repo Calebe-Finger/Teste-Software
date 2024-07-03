@@ -1,7 +1,7 @@
 <?php
-    require_once 'Carrinho.php';
-    require_once 'Produto.php';
-    require_once 'MenorEMaior.php';
+    require_once 'carrinho.php';
+    require_once 'produto.php';
+    require_once 'menorEMaior.php';
 
     class TesteMenorEMaior
     {
@@ -9,9 +9,9 @@
         {
             $carrinho = new Carrinho();
 
-            $carrinho -> adiciona(new Produto("Liquidificador",    250,00));
-            $carrinho -> adiciona(new Produto("Geladeira",         850,00));
-            $carrinho -> adiciona(new Produto("Panela de Pressão", 90,00));
+            $carrinho -> adiciona(new Produto("Liquidificador",    250.00));
+            $carrinho -> adiciona(new Produto("Geladeira",         850.00));
+            $carrinho -> adiciona(new Produto("Panela de Pressão", 90.500));
 
             $menorEMaior = new MenorEMaior();
             $menorEMaior -> encontra($carrinho);

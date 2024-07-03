@@ -1,6 +1,6 @@
 <?php
-    require_once 'Produto.php';
-    require_once 'Carrinho.php';
+    require_once 'produto.php';
+    require_once 'carrinho.php';
 
     class MenorEMaior
     {
